@@ -1,0 +1,12 @@
+{
+    "Magazine": true,
+    "User": true,
+    "Auth": true,
+    "Admin": true,
+    "Tip": true,
+    "Core": true,
+    "Media": true,
+    "Interaction": true,
+    "Event": true,
+    "Activity": true
+}

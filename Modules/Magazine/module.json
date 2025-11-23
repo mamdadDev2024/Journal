@@ -1,0 +1,11 @@
+{
+    "name": "Magazine",
+    "alias": "magazine",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Magazine\\Providers\\MagazineServiceProvider"
+    ],
+    "files": []
+}
