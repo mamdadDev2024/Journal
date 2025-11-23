@@ -16,7 +16,7 @@ class MagazineController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * TipShow the form for creating a new resource.
      */
     public function create()
     {
@@ -29,7 +29,7 @@ class MagazineController extends Controller
     public function store(Request $request) {}
 
     /**
-     * Show the specified resource.
+     * TipShow the specified resource.
      */
     public function show($id)
     {
@@ -37,7 +37,7 @@ class MagazineController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * TipShow the form for editing the specified resource.
      */
     public function edit($id)
     {

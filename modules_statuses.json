@@ -8,5 +8,6 @@
     "Media": true,
     "Interaction": true,
     "Event": true,
-    "Activity": true
+    "Activity": true,
+    "Setting": true
 }

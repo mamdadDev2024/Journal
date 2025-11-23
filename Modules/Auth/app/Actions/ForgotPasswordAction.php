@@ -2,7 +2,7 @@
 
 namespace Modules\Auth\Actions;
 
-class ForgetPasswordAction
+class ForgotPasswordAction
 {
     public function handle() {}
 }

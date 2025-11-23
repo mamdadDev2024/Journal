@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Modules\Core\Http\Controllers\CoreController;
 
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::resource('cores', CoreController::class)->names('core');
+Route::as('core.')->group(function () {
+    Route::get('search' , \Modules\Core\Livewire\Search::class)->name('search');
+    Route::get('download' , \Modules\Core\Http\Controllers\DownloadController::class)->name('download');
 });

@@ -4,7 +4,7 @@ namespace Modules\Auth\Livewire;
 
 use Livewire\Component;
 
-class ForgetPassword extends Component
+class ForgotPassword extends Component
 {
     public function render()
     {

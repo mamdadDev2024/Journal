@@ -38,10 +38,10 @@ trait HasSlug
         $count = 1;
 
         while (
-            $this->newQuery()
-                ->where('slug', $slug)
-                ->when($exceptId, fn ($q) => $q->where('id', '!=', $exceptId))
-                ->exists()
+        $this->newQuery()
+            ->where('slug', $slug)
+            ->when($exceptId, fn ($q) => $q->where('id', '!=', $exceptId))
+            ->exists()
         ) {
             $slug = "{$original}-{$count}";
             $count++;
