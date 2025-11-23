@@ -8,7 +8,6 @@
 <footer data-aos="fade-up"
         class="w-full flex flex-col mt-3 min-h-96 rounded-t-xl text-white bg-sky-600 dark:bg-gray-700">
 
-    {{-- تصویر بالای فوتر --}}
     <div data-aos="fade-down" class="w-full overflow-hidden bg-transparent">
         @if ($titleFooter)
             <a href="{{ route('home') }}" class="block w-full">

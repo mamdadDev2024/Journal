@@ -1,7 +1,7 @@
 <main class="w-full transition-all flex flex-col gap-8">
 
     <section class="mx-4">
-        <a href="{{ route('activity.index') }}" class="text-4xl font-bold hover:text-blue-600 dark:text-white block mb-4 text-center">رویداد ها</a>
+        <a href="{{ route('activity.index') }}" class="text-4xl font-bold hover:text-blue-600 dark:text-white block mb-4 text-center">رویدادها</a>
         <div class="rounded-xl p-4 bg-blue-300 dark:bg-darkPrimary shadow-lg">
             @if($activities->isNotEmpty())
                 <livewire:slider :items="$activities" type="" defaultLink="{{ route('activity.index') }}" containerClass="activity-swiper-container" />

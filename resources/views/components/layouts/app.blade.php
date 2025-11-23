@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="{{ asset('assets/app1.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/app2.css') }}">
     @endif
-
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/favicon.ico') }}">
     {{ $styles ?? '' }}
 
@@ -75,9 +74,7 @@
 
     {{ $scripts ?? '' }}
 
-    <div wire:loading.class.remove="hidden" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
-        <div class="loader"></div>
-    </div>
+    <x-overlay />
 
     {!! ToastMagic::scripts() !!}
     @livewireScripts

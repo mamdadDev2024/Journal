@@ -12,7 +12,7 @@ class LogoutController extends Controller
     public function __invoke(Request $request)
     {
         Auth::guard('web')->logout();
-        ToastMagic::success     ــ);
+        ToastMagic::success('از حساب کاربری خارج شدید.');
         return redirect('/');
     }
 }
