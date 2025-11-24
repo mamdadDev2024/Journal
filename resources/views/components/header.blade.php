@@ -84,7 +84,7 @@
 
                     <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
                     <a href="{{ route('activity.create') }}" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors">
-                        <x-heroicon-o-newspaper class="w-4 h-4 ml-2" />
+                        <x-heroicon-o-calendar class="w-4 h-4 ml-2" />
                         نوشتن رویداد
                     </a>
                     <a href="{{ route('magazine.create') }}" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors">
@@ -92,7 +92,7 @@
                         نوشتن نشریه
                     </a>
                     <a href="{{ route('tip.create') }}" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors">
-                        <x-heroicon-o-calendar class="w-4 h-4 ml-2" />
+                        <x-heroicon-o-light-bulb class="w-4 h-4 ml-2" />
                         نوشتن نکته
                     </a>
                 @endrole
@@ -128,18 +128,18 @@
 
     <nav class="md:flex gap-3 max-lg:gap-1 items-center sm:text-lg text-sm">
         <a href="{{ route('activity.index') }}" class="hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 rounded-md transition-all flex items-center gap-1">
-            <x-heroicon-o-newspaper class="w-4 h-4" />
-            اخبار
-        </a>
-        <a href="{{ route('magazine.index') }}" class="hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 rounded-md transition-all flex items-center gap-1">
-            <x-heroicon-o-book-open class="w-4 h-4" />
-            نشریه‌ها
-        </a>
-        <a href="{{ route('tip.index') }}" class="hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 rounded-md transition-all flex items-center gap-1">
             <x-heroicon-o-calendar class="w-4 h-4" />
             رویدادها
         </a>
-        <a href="{{ route('user.contact') }}" class="hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 rounded-md transition-all max-sm:hidden flex items-center gap-1">
+        <a href="{{ route('magazine.index') }}" class="hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 rounded-md transition-all flex items-center gap-1">
+            <x-heroicon-o-book-open class="w-4 h-4" />
+            نشریات
+        </a>
+        <a href="{{ route('tip.index') }}" class="hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 rounded-md transition-all flex items-center gap-1">
+            <x-heroicon-o-light-bulb class="w-4 h-4" />
+            نکات
+        </a>
+        <a href="{{ route('core.contact') }}" class="hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 rounded-md transition-all max-sm:hidden flex items-center gap-1">
             <x-heroicon-o-envelope class="w-4 h-4" />
             تماس با ما
         </a>

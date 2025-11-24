@@ -15,6 +15,7 @@
 
     <textarea
         name="{{ $name }}"
+        wire:model.lazy="{{ $name }}"
         id="{{ $name }}"
         rows="{{ $rows }}"
         @if($placeholder) placeholder="{{ $placeholder }}" @endif
